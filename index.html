@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sweet Cake</title>
+    <title> Aso Confectioneries </title>
 
     <!-- swiper link  -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <!-- cdn icon link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- custom css file  -->
     <link rel="stylesheet" href="style.css">
 
@@ -19,30 +21,52 @@
 
 <body>
 
-    <!-- header section start here  -->
-    <header class="header">
-        <div class="logoContent">
-            <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
-            <h1 class="logoName">Sweet Cake </h1>
+  <!-- Header section starts   -->
+
+<header class="header">
+      <!-- Navbar section starts   -->
+
+      <nav class="bg-white shadow dark:bg-gray-800">
+        <div class="container px-6 py-3 mx-auto md:flex">
+            <div class="navbar flex items-center justify-between">
+                <div>
+                    <a class="navbar-link navbar-link-logo text-sm font-bold text-gray-800 transition-colors duration-200 transform dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300" href="#">ASO<span> Confectioneries</span></a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="navbar-link navbar-link-toggle hidden ">
+                    <button type="button" class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
+                        <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                            <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+            <div class="navbar-items w-full md:flex md:items-center md:justify-between">
+                <div class="flex flex-col px-2 py-3 -mx-4 md:flex-row md:mx-0 md:py-0">
+                    <a href="#" class="navbar-link px-2 py-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-gray-900 hover:text-gray-100 md:mx-2">Home</a>
+                    <a href="#" class="navbar-link px-2 py-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-gray-900 hover:text-gray-100 md:mx-2">About</a>
+                    <a href="#" class="navbar-link px-2 py-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-gray-900 hover:text-gray-100 md:mx-2">Contact</a>
+                </div>
+                <button class="border-solid border-black hover:bg-black hover:text-white text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+                    <span>Place an order</span>
+                  </button> 
+               
+            </div>
         </div>
-
-        <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#product">product</a>
-            <a href="#blogs">blogs</a>
-            <a href="#review">review</a>
-            <a href="#contact">contact</a>
-        </nav>
-
-        <div class="icon">
-            <i class="fas fa-search" id="search"></i>
-            <i class="fas fa-bars" id="menu-bar"></i>
-        </div>
-
-        <div class="search">
-            <input type="search" placeholder="search...">
-        </div>
-    </header>
-    <!-- header section end here  -->
-
+    </nav>
+   <!-- Navbar section ends   -->
+</header>
+   <!-- Header section ends here  -->
    
+
+ 
+    
+  
+
+
+     <!-- order a cake section starts -->
+
+     
