@@ -11,52 +11,77 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <!-- cdn icon link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet">
     <!-- custom css file  -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
 <body>
 
   <!-- Header section starts   -->
+  <nav class="flex items-center justify-between flex-wrap bg-white shadow p-6 z-50">
+    <div class="flex items-center flex-shrink-0 mr-6">
+        <img src="/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Logo" />      
+        <div class="font-semibold text-xl text-black tracking-tight">ASO<span class="text-red-400"> Confectioneries</span></div>
+    </div>
+  
+    <label class="block lg:hidden cursor-pointer flex items-center px-3 py-2 border rounded border-teal-400 hover:text-white hover:border-white" for="menu-toggle"><svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg></label>
+    <input class="hidden" type="checkbox" id="menu-toggle" />
+  
+    <div class="hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto" id="menu">
+      <div class="text-sm lg:flex-grow">
+        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-black p-2 rounded hover:text-white hover:bg-red-500 mr-4">
+          Home
+        </a>
+        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-black p-2 rounded hover:text-white hover:bg-red-500 mr-4">
+          Offerings
+        </a>
+        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-black p-2 rounded hover:text-white hover:bg-red-500">
+          Blog
+        </a>
+        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-black p-2 rounded hover:text-white hover:bg-red-500">
+            Reviews
+          </a>
+      </div>
+      <div class="block">
+        <a href="#" class="item-end inline-block text-sm px-4 py-2 leading-none border-solid border-black rounded text-black hover:border-transparent hover:text-white hover:bg-black mt-4 lg:mt-0">Place an order</a>
+      </div>
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="hero__content">
+      <h2>Hero Images</h2>
+      <p>Can be created with a background-image in CSS.</p>
+    </div>
+  </section>
 
-<header class="header">
-      <!-- Navbar section starts   -->
-
-      <nav class="bg-white shadow dark:bg-gray-800">
-        <div class="container px-6 py-3 mx-auto md:flex">
-            <div class="navbar flex items-center justify-between">
-                <div>
-                    <a class="navbar-link navbar-link-logo text-sm font-bold text-gray-800 transition-colors duration-200 transform dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300" href="#">ASO<span> Confectioneries</span></a>
-                </div>
+  <!-- <div class="mt-4 p-4 shadow bg-slate-600 bg-blend-lighten hover:bg-blend-darken lg:flex">
+    <div class="flex items-center justify-center w-full px-6 py-8 lg:h-[40rem] lg:w-1/2">
+        <div class="max-w-xl">
+            <h2 class="text-2xl font-semibold text-gray-800 dark:text-white lg:text-3xl">Cake with <span class="text-blue-600 dark:text-red-400">ASO</span></h2>
                 
-                <!-- Mobile menu button -->
-                <div class="navbar-link navbar-link-toggle hidden ">
-                    <button type="button" class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
-                        <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
-                            <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
+            <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 lg:text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi cum cupiditate ducimus, fugit harum id necessitatibus odio quam quasi, quibusdam rem tempora voluptates.</p>
 
-            <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-            <div class="navbar-items w-full md:flex md:items-center md:justify-between">
-                <div class="flex flex-col px-2 py-3 -mx-4 md:flex-row md:mx-0 md:py-0">
-                    <a href="#" class="navbar-link px-2 py-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-gray-900 hover:text-gray-100 md:mx-2">Home</a>
-                    <a href="#" class="navbar-link px-2 py-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-gray-900 hover:text-gray-100 md:mx-2">About</a>
-                    <a href="#" class="navbar-link px-2 py-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded dark:text-gray-200 hover:bg-gray-900 hover:text-gray-100 md:mx-2">Contact</a>
-                </div>
-                <button class="border-solid border-black hover:bg-black hover:text-white text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
-                    <span>Place an order</span>
-                  </button> 
-               
+            <div class="flex flex-col mt-6 space-y-3 lg:space-y-0 lg:flex-row">
+                <a href="#" class="block px-3 py-2 text-sm font-semibold text-center text-white transition-colors duration-200 transform bg-gray-900 rounded-md hover:bg-gray-700">Get Started</a>
+                <a href="#" class="block px-3 py-2 text-sm font-semibold text-center text-gray-700 transition-colors duration-200 transform bg-gray-200 rounded-md lg:mx-4 hover:bg-gray-300">Learn More</a>
             </div>
         </div>
-    </nav>
+    </div> -->
+   
+    
+    <!-- <div class="w-full h-64 lg:w-1/2 lg:h-auto">
+        <div class="w-full h-full bg-cover" style="background-image: url(https://images.unsplash.com/photo-1586195831465-e769c717f1e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)">
+            <div class="w-full h-full bg-black opacity-25"></div>
+        </div>
+    </div>
+</div> -->
+  
+
+      
    <!-- Navbar section ends   -->
 </header>
    <!-- Header section ends here  -->
@@ -69,4 +94,6 @@
 
      <!-- order a cake section starts -->
 
-     
+     </body>
+     <script src ='index.js'></script>
+     </html>

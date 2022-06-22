@@ -15,50 +15,21 @@
     text-transform: capitalize;
     transition: .2s linear;
 }
-html{
-    font-size: 62.5%;   
-    overflow-x: hidden;
-    scroll-padding-top: 7rem;
-    scroll-behavior: smooth;
-}
-html::-webkit-scrollbar{
-    width: .8rem;
-}
-html::-webkit-scrollbar-track{
-    background: transparent;
-}
-html::-webkit-scrollbar-thumb{
-    background-color: var(--white);
-    border-radius: 5rem;
-}
 
 
-
-@media only screen and (max-width: 800px) {
-    
-    .navbar, .navbar-items {
-      flex-direction: column;
-    }
-      
-    .navbar-items {
-      display:none;
-    }
-      
-    .navbar-link {
-        display:none;
-      }
-      
-  .navbar-toggle-show {
-      display: flex;
-    }
-      
-  .navbar-link-toggle {
-      display: flex;
-      position: absolute;
-      cursor: pointer;
-     } 
+.hero {
+    background-color: #fff;
+    background-image: url(Images/Hero-image.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh; 
   }
-
+  
+  .hero__content {
+    padding: 10rem 3rem; 
+    text-align: left;
+  }
 
 
 /* Order section */
