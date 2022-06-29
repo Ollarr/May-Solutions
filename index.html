@@ -1,101 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Aso Confectioneries </title>
-
-    <!-- swiper link  -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-    <!-- cdn icon link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-      rel="stylesheet">
-    <!-- custom css file  -->
-    <link rel="stylesheet" href="styles.css">
-
-</head>
-
-<body>
-
-  <!-- Header section starts   -->
-  <nav class="flex items-center justify-between flex-wrap bg-white shadow p-6 z-50">
-    <div class="flex items-center flex-shrink-0 mr-6">
-        <img src="/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Logo" />      
-        <div class="font-semibold text-xl text-black tracking-tight">ASO<span class="text-red-400"> Confectioneries</span></div>
-    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>May Solutions</title>
   
-    <label class="block lg:hidden cursor-pointer flex items-center px-3 py-2 border rounded border-teal-400 hover:text-white hover:border-white" for="menu-toggle"><svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg></label>
-    <input class="hidden" type="checkbox" id="menu-toggle" />
-  
-    <div class="hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto" id="menu">
-      <div class="text-sm lg:flex-grow">
-        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-black p-2 rounded hover:text-white hover:bg-red-500 mr-4">
-          Home
-        </a>
-        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-black p-2 rounded hover:text-white hover:bg-red-500 mr-4">
-          Offerings
-        </a>
-        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-black p-2 rounded hover:text-white hover:bg-red-500">
-          Blog
-        </a>
-        <a href="#" class="block mt-4 lg:inline-block lg:mt-0 text-black p-2 rounded hover:text-white hover:bg-red-500">
-            Reviews
-          </a>
-      </div>
-      <div class="block">
-        <a href="#" class="item-end inline-block text-sm px-4 py-2 leading-none border-solid border-black rounded text-black hover:border-transparent hover:text-white hover:bg-black mt-4 lg:mt-0">Place an order</a>
-      </div>
-    </div>
-  </nav>
-  <section class="hero">
-    <div class="hero-content">
-      <h1>ASO Confectioneries</h1>
-      <p>Can be created with CSS.
-        Can be created with CSS.
-        Can be created with CSS.</p>
-    </div>
-  </section>
+		<link rel="stylesheet" type="text/css" href="http://www.24limousine.com/wp-content/themes/24Limousine/assets/css/owl.carousel.min.css">		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
 
-  <!-- <div class="mt-4 p-4 shadow bg-slate-600 bg-blend-lighten hover:bg-blend-darken lg:flex">
-    <div class="flex items-center justify-center w-full px-6 py-8 lg:h-[40rem] lg:w-1/2">
-        <div class="max-w-xl">
-            <h2 class="text-2xl font-semibold text-gray-800 dark:text-white lg:text-3xl">Cake with <span class="text-blue-600 dark:text-red-400">ASO</span></h2>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css"
+		/>
+		<!-- cdn icon link  -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+			rel="stylesheet"
+		/>
+		<!-- custom css file  -->
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+
+	<body>
+		<!-- Header section starts   -->
+		<nav
+			class="navbar z-100 flex items-center justify-between flex-wrap bg-white shadow p-6 z-50"
+		>
+			<div class="flex items-center flex-shrink-0 mr-6">
+				<img src="/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Logo" />
+				<div class="font-semibold text-xl text-black tracking-tight">
+					May <span class="text-sm text-red-600" style="font-family: yesteryear">
+						Solutions</span
+					>
+				</div>
+			</div>
+
+			<label
+				class="block lg:hidden cursor-pointer flex items-center px-3 py-2 border rounded border-teal-400"
+				for="menu-toggle"
+				><svg
+					class="fill-current h-3 w-3"
+					viewBox="0 0 20 20"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<title>Menu</title>
+					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg></label>
+			<input class="hidden" type="checkbox" id="menu-toggle" />
+
+			<div
+				class="z-10 mb-4 hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto"
+				id="menu"
+			>
+				<div class="text-sm lg:flex-grow">
+					<a
+						href="#"
+						class="block mt-4 lg:inline-block lg:mt-0 text-black p-2 rounded hover:text-white mr-4"
+					>
+						Location
+					</a>
+					<a
+						href="#"
+						class="block mt-4 lg:inline-block lg:mt-0 text-black p-2 rounded hover:text-white mr-4"
+					>
+						Solutions
+					</a>
+					<a
+						href="#"
+						class="block mt-4 lg:inline-block lg:mt-0 text-black p-2 rounded hover:text-white"
+					>
+						Enterprise
+					</a>
+					<a
+						href="#"
+						class="block mt-4 lg:inline-block lg:mt-0 text-black p-2 rounded hover:text-white"
+					>
+						Ideas
+					</a>
+					<a
+						href="#"
+						class="block mt-4 lg:inline-block lg:mt-0 text-black p-2 rounded hover:text-white"
+					>
+						About us
+					</a>
+				</div>
+				<div class="block">
+					<a
+						href="#"
+						class="item-end inline-block text-sm px-4 py-2 leading-none border-solid border-black rounded text-black hover:border-transparent hover:text-white hover:bg-black mt-4 lg:mt-0"
+						>Contacts</a
+					>
+				</div>
+			</div>
+		</nav>
+		<!-- Navbar section ends   -->
+		<!-- Header Section starts -->
+    <div class="hero-wrapper">
+      <div class="hero-content-left">
+        <div class="hero-content-box">
+          <h2>Find your perfect workspace</h2>
+          <p> Whether you are a work team or .... Whether you are a work team or ....</p>
+          <input class='hero-input' type='text' placeholder='search'>
+          <br>
+          <a href=''><button class='hero-cta-btn'> Start </button></a>
+        </div>
+      </div>
+      <div class="hero-content-right">
+        <img src='https://media.istockphoto.com/photos/young-bearded-businessman-sitting-on-desk-and-posing-picture-id1322913815?b=1&k=20&m=1322913815&s=170667a&w=0&h=rvURoK1t_rjAf09De0F5v6L9_wgJrUuZK_cw3vjPgDM=' alt='' class='hero-image'/>
+      </div>
+    </div>
+  </header>
+		<!-- Header Section ends -->
+		<!-- feacture section 1 starts -->
+    <section class='feature-section'>
+		<div class="feature-heading"><h3> For all the ways you work, we are here</h3><span><a href='#' class="feature-link"> View all solutions</a></span>
+	</div>
+		<div class="feature-container">
+        <div class="feature-card"> 
+			<i class='fas fa-building'></i>
+		<div class="feature-info">
+			<h3>Your own office or desk </h3>
+			<p>Bring teams of any size together </p>
+		</div>
+      </div>
+	  <div class="feature-card"> 
+		<i class='fas fa-building'></i>
+	<div class="feature-info">
+		<h3>Access hundreds of locations </h3>
+		<p> Work from hot desks with a monthly membership</p>
+	</div>
+  </div>
+  <div class="feature-card"> 
+	<i class='fas fa-building'></i>
+<div class="feature-info">
+	<h3>Space by the hour or day</h3>
+	<p> Book hot desks and meeting rooms in our app</p>
+</div>
+</div>
+
+	</div>
+    </section>
+		<!-- feacture section 1 ends -->
+
+	<!-- enterprise section 1 starts  -->
+	
+	<section class="bg-gray-100 dark:bg-gray-900 lg:py-12 lg:flex ">
+        <div class="bg-white dark:bg-gray-800 w-full lg:mx-8 lg:flex lg:max-w-7xl lg:shadow-lg lg:rounded-lg">
+            <div class="lg:w-3/5">
+                <div class="bg-cover pb-12 lg:rounded-lg lg:h-full" style="background-image:url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG9mZmljZSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60')"></div>
+            </div>
+
+            <div class="max-w-xl px-6 py-12 lg:max-w-5xl lg:w-2/5">
+				<p class="mt-4 p-2 bg-yellow-400 bg-no-repeat text-gray-600 dark:text-gray-400">New members offer</p>
+				<h2 class="text-2xl font-bold text-gray-800 dark:text-white md:text-3xl">Make your return to the office easier with this special <span class="text-blue-600 dark:text-blue-400">offer</span></h2>
+                <p class="mt-4 text-gray-600 dark:text-gray-400">Unlock daily access to hot desks, meeting rooms, and private offices across hunrdeds of locations with a May Solutions All Access membership. Get 25% off your first three months. Terms apply.</p>
                 
-            <p class="mt-2 text-sm text-gray-500 dark:text-gray-400 lg:text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi cum cupiditate ducimus, fugit harum id necessitatibus odio quam quasi, quibusdam rem tempora voluptates.</p>
-
-            <div class="flex flex-col mt-6 space-y-3 lg:space-y-0 lg:flex-row">
-                <a href="#" class="block px-3 py-2 text-sm font-semibold text-center text-white transition-colors duration-200 transform bg-gray-900 rounded-md hover:bg-gray-700">Get Started</a>
-                <a href="#" class="block px-3 py-2 text-sm font-semibold text-center text-gray-700 transition-colors duration-200 transform bg-gray-200 rounded-md lg:mx-4 hover:bg-gray-300">Learn More</a>
+                <div class="mt-8">
+                    <a href="#" class="px-5 py-2 font-semibold text-gray-100 transition-colors duration-200 transform bg-gray-900 rounded-md hover:bg-gray-700">Learn more</a>
+                </div>
             </div>
         </div>
-    </div> -->
-   
-    
-    <!-- <div class="w-full h-64 lg:w-1/2 lg:h-auto">
-        <div class="w-full h-full bg-cover" style="background-image: url(https://images.unsplash.com/photo-1586195831465-e769c717f1e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)">
-            <div class="w-full h-full bg-black opacity-25"></div>
-        </div>
-    </div>
-</div> -->
-  
+    </section> 
+		<!-- enterprise section 1 ends  -->
+		<!-- feature section 2 starts -->
+		<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+			<div class="grid gap-8 row-gap-5 sm:row-gap-8 sm:grid-cols-2 lg:grid-cols-3">
+			  <div>
+				<h1>Get the workspace you need, when and where you need it so you can focus on your business</h1>
+				<div class="flex items-center justify-center w-24 h-24 mb-4 rounded-full">
+					<i class='icon fa-solid fa-city '></i>
+				</div>
+				<h6 class="mb-2 font-semibold leading-5">Flexible spaces that meet your needs</h6>
+				<p class="mb-3 text-sm text-gray-900">
+				  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium rem aperiam.
+				</p>
+				<a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn more</a>
+			  </div>
+			  <div>
+				<div class="flex items-center justify-center w-24 h-24 mb-4 rounded-full">
+					<i class="icon fa-solid fa-network-wired"></i>
+				</div>
+				<h6 class="mb-2 font-semibold leading-5">When has justice</h6>
+				<p class="mb-3 text-sm text-gray-900">
+				  Rough pomfret lemon shark plownose chimaera southern sandfish kokanee northern sea.
+				</p>
+				<a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn more</a>
+			  </div>
+			  <div>
+				<div class="flex items-center justify-center w-24 h-24 mb-4 rounded-full">
+					<i class="icon fa-solid fa-crosshairs"></i>
+				</div>
+				<h6 class="mb-2 font-semibold leading-5">Organically grow</h6>
+				<p class="mb-3 text-sm text-gray-900">
+				  A slice of heaven. O for awesome, this chocka full cuzzie is as rip-off as a cracker.
+				</p>
+				<a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn more</a>
+			  </div>
+			  
+			</div>
+		  </div>
+		<!-- feature section 2 starts -->
+<!-- enterprise section 2 starts -->
+<section class="bg-gray-100 dark:bg-gray-900 lg:py-12 lg:flex ">
+	<div class="bg-white dark:bg-gray-800 w-full lg:mx-8 lg:flex lg:max-w-7xl lg:shadow-lg lg:rounded-lg">
+		<div class="lg:w-3/5">
+			<div class="bg-cover pb-12 lg:rounded-lg lg:h-full" style="background-image:url('https://images.unsplash.com/photo-1572021335469-31706a17aaef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8b2ZmaWNlJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60')"></div>
+		</div>
 
-      
-   <!-- Navbar section ends   -->
-</header>
-   <!-- Header section ends here  -->
-   
+		<div class="max-w-xl px-6 py-12 lg:max-w-5xl lg:w-2/5">
+			<h2 class="text-2xl font-bold text-gray-800 dark:text-white md:text-3xl">Creating a healthier workspace </h2>
+			<p class="mt-4 text-gray-600 dark:text-gray-400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem modi reprehenderit vitae exercitationem aliquid dolores ullam temporibus enim expedita aperiam mollitia iure consectetur dicta tenetur, porro consequuntur saepe accusantium consequatur.</p>
+			
+			<div class="mt-8">
+				<a href="#" class="px-5 py-2 font-semibold text-gray-100 transition-colors duration-200 transform bg-gray-900 rounded-md hover:bg-gray-700">Learn more</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- enterprise section 2 ends -->
 
- 
-    
-  
+<section class="bg-gray-100 dark:bg-gray-900 lg:py-12 lg:flex ">
+	<div class="bg-white dark:bg-gray-800 w-full lg:mx-8 lg:flex lg:max-w-7xl lg:shadow-lg lg:rounded-lg">
+		<div class="max-w-xl px-6 py-12 lg:max-w-5xl lg:w-2/5">
+			<h2 class="text-2xl font-bold text-gray-800 dark:text-white md:text-3xl">Creating a healthier workspace </h2>
+			<p class="mt-4 text-gray-600 dark:text-gray-400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem modi reprehenderit vitae exercitationem aliquid dolores ullam temporibus enim expedita aperiam mollitia iure consectetur dicta tenetur, porro consequuntur saepe accusantium consequatur.</p>
+			
+			<div class="mt-8">
+				<a href="#" class="px-5 py-2 font-semibold text-gray-100 transition-colors duration-200 transform bg-gray-900 rounded-md hover:bg-gray-700">Learn more</a>
+			</div>
+		</div>
+		<div class="lg:w-3/5">
+			<div class="bg-cover lg:rounded-lg lg:h-full" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/No_colonies_blank_world_map.png/1200px-No_colonies_blank_world_map.png')"></div>
+		</div>
+	</div>
+</section>
+<div class="cover-wrapper">
+	<div id="client-logos" class="owl-carousel text-center">
+	    <div class="item">
+	    	<div class="client-inners">
+		      <img src="https://res.cloudinary.com/hkf2ycaep/image/fetch/c_limit,d_project-placeholder.png,f_auto,h_1440,w_1440/https://d23vk1trp0fmbf.cloudfront.net/partners/impactseed.png" alt=""/>
+		    </div>
+	    </div>
+	    <div class="item">
+	    	<div class="client-inners">
+		      <img src="https://fangalbert.com/wp-content/uploads/2018/02/monero-logo-coin.png" alt=""/>
+		    </div>
+	    </div>
+	    <div class="item">
+	    	<div class="client-inners">
+		      <img src="https://www.celum.com/data/_dateimanager/logos/sitecore.png" alt=""/>
+		    </div>
+	    </div>
+	    <div class="item">
+	    	<div class="client-inners">
+		      <img src="http://prettypanache.com/wp-content/uploads/2014/11/dummy-logo-pinkpurple-small.png" alt=""/>
+		    </div>
+	    </div>
+	    <div class="item">
+	    	<div class="client-inners">
+		      <img src="https://www.medfood2u.com/assets/logo-main.png" alt=""/>
+		    </div>
+	    </div>
+	    <div class="item">
+	    	<div class="client-inners">
+		      <img src="http://woodendummy.dk/wp-content/uploads/2017/01/woodendummy-logo-2x.png" alt=""/>
+		    </div>
+	    </div>
+	    <div class="item">
+	    	<div class="client-inners">
+		      <img src="https://i1.wp.com/cascadefls.org/wp-content/uploads/2017/03/Dummy-logo.png" alt=""/>
+		    </div>
+	    </div>
+	    <div class="item">
+	    	<div class="client-inners">
+		      <img src="https://mvpdummy.com/assets/images/content/drone/distrupt-logo-dark.png" alt=""/>
+		    </div>
+	    </div>
+	    <div class="item">
+	    	<div class="client-inners">
+		      <img src="http://www.digisport.co.za/wp-content/uploads/2014/09/Logo-702x336.png" alt=""/>
+		    </div>
+	    </div>
+	</div>
+</div>
+  <!-- feature section 3 starts -->
+  <section class="bg-gray-100 dark:bg-gray-900 lg:py-12 lg:flex ">
+	<div class="bg-white dark:bg-gray-800 w-full lg:mx-8 lg:flex lg:max-w-7xl lg:shadow-lg lg:rounded-lg">
+		<div class="lg:w-3/5">
+			<div class="bg-cover pb-12 lg:rounded-lg lg:h-full" style="background-image:url('https://images.unsplash.com/photo-1572021335469-31706a17aaef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8b2ZmaWNlJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60')"></div>
+		</div>
 
+		<div class="max-w-xl px-6 py-12 lg:max-w-5xl lg:w-2/5">
+			<h2 class="text-2xl font-bold text-gray-800 dark:text-white md:text-3xl">Creating a healthier workspace </h2>
+			<p class="mt-4 text-gray-600 dark:text-gray-400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem modi reprehenderit vitae exercitationem aliquid dolores ullam temporibus enim expedita aperiam mollitia iure consectetur dicta tenetur, porro consequuntur saepe accusantium consequatur.</p>
+			
+			<div class="mt-8">
+				<a href="#" class="px-5 py-2 font-semibold text-gray-100 transition-colors duration-200 transform bg-gray-900 rounded-md hover:bg-gray-700">Learn more</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- feature section 3 ends -->
 
-     <!-- order a cake section starts -->
+<hr style="width:100%", size="3", color=black>
 
-     </body>
-     <script src ='index.js'></script>
-     </html>
+<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+	<div class="flex flex-col w-full mb-6 lg:justify-between lg:flex-row md:mb-8">
+	  
+	<div class="grid gap-8 row-gap-5 mb-8 lg:grid-cols-3 lg:row-gap-8">
+	  <div>
+		<img class="border-0 object-cover w-full h-56 mb-6 rounded shadow-lg md:h-64 xl:h-80" src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
+		<span><p>MEMBERS SPOTLIGHT</p></span><hr style="width:25%", size="3", color=black>
+		<p class="mb-2 text-xl font-bold leading-none sm:text-2xl">
+		  Galaxies Orion
+		</p>
+		<p class="text-gray-700">
+		  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+		</p>
+	  </div>
+	  <div>
+		<img class="border-0 object-cover w-full h-56 mb-6 rounded shadow-lg md:h-64 xl:h-80" src="https://images.pexels.com/photos/3182750/pexels-photo-3182750.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" />
+		<span><p>EXPERTS INSIGHT</p></span><hr style="width:25%", size="3", color=black>
+		<p class="mb-2 text-xl font-bold leading-none sm:text-2xl">
+		  Tunguska event
+		</p>
+		<p class="text-gray-700">
+		  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+		</p>
+	  </div>
+	  <div>
+	   
+	</div>
+  </div>
+	</body>
+	<!-- Swiper JS -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://www.24limousine.com/wp-content/themes/24Limousine/assets/js/owl.carousel.min.js"></script>
+	<script src="index.js"></script>
+</html>
