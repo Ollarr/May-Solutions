@@ -234,6 +234,14 @@ body {
 .icon {
 	font-size: 3rem;
 }
+/* enterprise section */
+.enterprise-img {
+	padding-bottom: 20rem;
+}
+.enterprise-section-text-span {
+	background-color: yellow;
+	border-radius: 4px;
+}
 
 /* partners section starts */
 #client-logos .item {

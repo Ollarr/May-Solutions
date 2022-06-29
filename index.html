@@ -37,9 +37,9 @@
 			class="navbar z-100 flex items-center justify-between flex-wrap bg-white shadow p-6 z-50"
 		>
 			<div class="flex items-center flex-shrink-0 mr-6">
-				<img src="/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Logo" />
-				<div class="font-semibold text-xl text-black tracking-tight">
-					May <span class="text-sm text-red-600" style="font-family: yesteryear">
+				<img src="/docs/images/logo.svg" class="border-0 mr-3 h-6 sm:h-9" alt="Logo" />
+				<div class="font-semibold text-lg text-black tracking-tight">
+					May <span class="text-lg text-red-600" style="font-family: yesteryear">
 						Solutions</span
 					>
 				</div>
@@ -47,48 +47,49 @@
 
 			<label
 				class="block lg:hidden cursor-pointer flex items-center px-3 py-2 border rounded border-teal-400"
-				for="menu-toggle"
-				><svg
-					class="fill-current h-3 w-3"
+				for="menu-toggle">
+				<svg
+					class="fill-current h-4 w-4"
 					viewBox="0 0 20 20"
-					xmlns="http://www.w3.org/2000/svg"
-				>
+					xmlns="http://www.w3.org/2000/svg">
 					<title>Menu</title>
-					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg></label>
+					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+				</svg>
+				</label>
 			<input class="hidden" type="checkbox" id="menu-toggle" />
 
 			<div
 				class="z-10 mb-4 hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto"
 				id="menu"
 			>
-				<div class="text-sm lg:flex-grow">
+				<div class="text-lg lg:flex-grow">
 					<a
 						href="#"
-						class="block mt-4 lg:inline-block lg:mt-0 text-black p-2 rounded hover:text-white mr-4"
+						class="text-lg block mt-4 lg:inline-block lg:mt-0 text-black p-2 rounded hover:text-white hover:bg-gray-900 mr-4"
 					>
 						Location
 					</a>
 					<a
 						href="#"
-						class="block mt-4 lg:inline-block lg:mt-0 text-black p-2 rounded hover:text-white mr-4"
+						class="text-lg block mt-4 lg:inline-block lg:mt-0 text-black p-2 rounded hover:text-white hover:bg-gray-900 mr-4"
 					>
 						Solutions
 					</a>
 					<a
 						href="#"
-						class="block mt-4 lg:inline-block lg:mt-0 text-black p-2 rounded hover:text-white"
+						class="text-lg block mt-4 lg:inline-block lg:mt-0 text-black p-2 rounded hover:text-white hover:bg-gray-900"
 					>
 						Enterprise
 					</a>
 					<a
 						href="#"
-						class="block mt-4 lg:inline-block lg:mt-0 text-black p-2 rounded hover:text-white"
+						class="text-lg block mt-4 lg:inline-block lg:mt-0 text-black p-2 rounded hover:text-white hover:bg-gray-900"
 					>
 						Ideas
 					</a>
 					<a
 						href="#"
-						class="block mt-4 lg:inline-block lg:mt-0 text-black p-2 rounded hover:text-white"
+						class="text-lg block mt-4 lg:inline-block lg:mt-0 text-black p-2 rounded hover:text-white hover:bg-gray-900"
 					>
 						About us
 					</a>
@@ -96,7 +97,7 @@
 				<div class="block">
 					<a
 						href="#"
-						class="item-end inline-block text-sm px-4 py-2 leading-none border-solid border-black rounded text-black hover:border-transparent hover:text-white hover:bg-black mt-4 lg:mt-0"
+						class="text-lg item-end inline-block text-sm px-4 py-2 leading-none border-solid border-black rounded text-black hover:border-transparent hover:text-white hover:bg-gray-900 mt-4 lg:mt-0"
 						>Contacts</a
 					>
 				</div>
@@ -156,17 +157,21 @@
 	<section class="bg-gray-100 dark:bg-gray-900 lg:py-12 lg:flex ">
         <div class="bg-white dark:bg-gray-800 w-full lg:mx-8 lg:flex lg:max-w-7xl lg:shadow-lg lg:rounded-lg">
             <div class="lg:w-3/5">
-                <div class="bg-cover pb-12 lg:rounded-lg lg:h-full" style="background-image:url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG9mZmljZSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60')"></div>
+                <div class="enterprise-img bg-cover lg:rounded-lg lg:h-full" style="background-image:url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fG9mZmljZSUyMHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60')"></div>
             </div>
 
             <div class="max-w-xl px-6 py-12 lg:max-w-5xl lg:w-2/5">
-				<p class="mt-4 p-2 bg-yellow-400 bg-no-repeat text-gray-600 dark:text-gray-400">New members offer</p>
+				<span class="enterprise-section-text-span mt-4 p-2 text-gray-600 dark:text-gray-400">New members offer</span>
 				<h2 class="text-2xl font-bold text-gray-800 dark:text-white md:text-3xl">Make your return to the office easier with this special <span class="text-blue-600 dark:text-blue-400">offer</span></h2>
                 <p class="mt-4 text-gray-600 dark:text-gray-400">Unlock daily access to hot desks, meeting rooms, and private offices across hunrdeds of locations with a May Solutions All Access membership. Get 25% off your first three months. Terms apply.</p>
                 
                 <div class="mt-8">
                     <a href="#" class="px-5 py-2 font-semibold text-gray-100 transition-colors duration-200 transform bg-gray-900 rounded-md hover:bg-gray-700">Learn more</a>
                 </div>
+				<br>
+				<br>
+				<br>
+				<br>
             </div>
         </div>
     </section> 
@@ -174,8 +179,8 @@
 		<!-- feature section 2 starts -->
 		<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
 			<div class="grid gap-8 row-gap-5 sm:row-gap-8 sm:grid-cols-2 lg:grid-cols-3">
-			  <div>
 				<h1>Get the workspace you need, when and where you need it so you can focus on your business</h1>
+			<div>
 				<div class="flex items-center justify-center w-24 h-24 mb-4 rounded-full">
 					<i class='icon fa-solid fa-city '></i>
 				</div>
@@ -210,10 +215,10 @@
 		  </div>
 		<!-- feature section 2 starts -->
 <!-- enterprise section 2 starts -->
-<section class="bg-gray-100 dark:bg-gray-900 lg:py-12 lg:flex ">
-	<div class="bg-white dark:bg-gray-800 w-full lg:mx-8 lg:flex lg:max-w-7xl lg:shadow-lg lg:rounded-lg">
+<section class="dark:bg-gray-900 lg:py-12 lg:flex ">
+	<div class="dark:bg-gray-800 w-full lg:mx-8 lg:flex lg:max-w-7xl lg:shadow-lg lg:rounded-lg">
 		<div class="lg:w-3/5">
-			<div class="bg-cover pb-12 lg:rounded-lg lg:h-full" style="background-image:url('https://images.unsplash.com/photo-1572021335469-31706a17aaef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8b2ZmaWNlJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60')"></div>
+			<div class="enterprise-img bg-cover pb-12 lg:rounded-lg lg:h-full" style="background-image:url('https://images.unsplash.com/photo-1572021335469-31706a17aaef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8b2ZmaWNlJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60')"></div>
 		</div>
 
 		<div class="max-w-xl px-6 py-12 lg:max-w-5xl lg:w-2/5">
@@ -223,6 +228,11 @@
 			<div class="mt-8">
 				<a href="#" class="px-5 py-2 font-semibold text-gray-100 transition-colors duration-200 transform bg-gray-900 rounded-md hover:bg-gray-700">Learn more</a>
 			</div>
+			
+				<br>
+				<br>
+				<br>
+				<br>
 		</div>
 	</div>
 </section>
@@ -239,7 +249,7 @@
 			</div>
 		</div>
 		<div class="lg:w-3/5">
-			<div class="bg-cover lg:rounded-lg lg:h-full" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/No_colonies_blank_world_map.png/1200px-No_colonies_blank_world_map.png')"></div>
+			<div class="enterprise-img bg-cover lg:rounded-lg lg:h-full" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/No_colonies_blank_world_map.png/1200px-No_colonies_blank_world_map.png')"></div>
 		</div>
 	</div>
 </section>
@@ -296,7 +306,7 @@
   <section class="bg-gray-100 dark:bg-gray-900 lg:py-12 lg:flex ">
 	<div class="bg-white dark:bg-gray-800 w-full lg:mx-8 lg:flex lg:max-w-7xl lg:shadow-lg lg:rounded-lg">
 		<div class="lg:w-3/5">
-			<div class="bg-cover pb-12 lg:rounded-lg lg:h-full" style="background-image:url('https://images.unsplash.com/photo-1572021335469-31706a17aaef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8b2ZmaWNlJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60')"></div>
+			<div class="enterprise-img bg-cover pb-12 lg:rounded-lg lg:h-full" style="background-image:url('https://images.unsplash.com/photo-1572021335469-31706a17aaef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8b2ZmaWNlJTIwcGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60')"></div>
 		</div>
 
 		<div class="max-w-xl px-6 py-12 lg:max-w-5xl lg:w-2/5">
@@ -311,7 +321,7 @@
 </section>
 <!-- feature section 3 ends -->
 
-<hr style="width:100%", size="3", color=black>
+<hr style="width:100%", size="3", color=black, border="1px solid">
 
 <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
 	<div class="flex flex-col w-full mb-6 lg:justify-between lg:flex-row md:mb-8">
